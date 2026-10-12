@@ -1,9 +1,16 @@
-Zakariae & Salma — invitation de mariage
+ZAKARIAE & SALMA — SIGNATURE PRO
 
-Fichiers du site : index.html, styles.css, script.js, jardin-royal.jpg, floral-left.jpg et floral-right.jpg.
+Fichiers à placer à la racine du dépôt GitHub Pages :
+- index.html
+- styles.css
+- script.js
+- jardin-royal.jpg
+- floral-left.jpg
+- floral-right.jpg
+- young-and-beautiful-instrumental.mp3 (votre fichier audio existant)
 
-Musique : placez votre fichier young-and-beautiful-instrumental.mp3 à la racine du dépôt, au même niveau que index.html. La musique démarre après le premier clic (règles du navigateur) et peut être mise en pause/reprise avec le bouton Musique.
+La page affiche un mélange français/arabe par défaut. Le bouton de langue fait défiler : mixte → français → arabe → mixte.
+Le portail s'ouvre au clic; ce premier clic tente également de lancer young-and-beautiful-instrumental.mp3. Les navigateurs exigent une interaction pour autoriser le son. Le bouton Musique permet de mettre en pause/reprendre.
+La carte Google Maps est intégrée dans la page, avec un bouton d'itinéraire vers le lien fourni.
 
-La carte Google Maps du Palais Hiba à Fès est intégrée dans la page. Le français est affiché par défaut, avec un bouton de changement vers l'arabe.
-
-Pour GitHub Pages, téléversez tous les fichiers ci-dessus à la racine du dépôt. La carte et les polices web nécessitent Internet.
+Important : conservez votre fichier young-and-beautiful-instrumental.mp3 à la racine du dépôt, au même niveau que index.html. Il n'est pas inclus dans cette archive car le fichier original est déjà dans votre dépôt.
