@@ -44,3 +44,11 @@ La version conserve le jardin et le portail d’origine, et ajoute le mouvement 
 
 ## Typographie classique
 La version utilise une typographie plus classique et élégante : Playfair Display pour les noms, Cormorant Garamond pour les textes et Amiri pour l’arabe. Les animations du jardin royal sont conservées.
+
+
+## Carte intégrée
+La section invitation inclut une carte Google Maps intégrée pour Palais Hiba, Fès, en plus du bouton d’itinéraire. Une connexion Internet est nécessaire pour afficher la carte.
+
+
+## Version Signature Pro
+Cette édition conserve le jardin royal, le portail qui s’ouvre, les textes français/arabe et la carte Google Maps intégrée. Elle ajoute une finition plus éditoriale, une guirlande florale, des roses décoratives, des arbres et fleurs animés par une brise douce, une lueur de lanternes, des icônes de localisation et une mise en valeur des détails de l’événement. La mise en page s’adapte aux téléphones et ordinateurs.
