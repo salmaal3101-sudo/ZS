@@ -157,3 +157,53 @@ body[dir="rtl"] .date-label,body[dir="rtl"] .countdown span {letter-spacing:0;}
   .gate-scene { width: min(100%, 900px); }
   .garden-view { height: min(62vw, 650px); }
 }
+
+
+/* Carte Google Maps intégrée à l’invitation */
+.map-embed-wrap { width: min(100%, 560px); margin: 24px auto 14px; overflow: hidden; border: 1px solid rgba(182,154,97,.7); border-radius: 3px; box-shadow: 0 10px 28px rgba(121,91,61,.12); background: #f4eadc; }
+.map-embed { display: block; width: 100%; height: clamp(250px, 45vw, 360px); border: 0; filter: sepia(.12) saturate(.82); }
+.map-button { max-width: 100%; justify-content: center; flex-wrap: wrap; }
+
+
+/* Cadre floral animé supplémentaire : pétales, petites fleurs et éclats dorés */
+.romantic-floral-frame {
+  position: fixed; inset: 0; z-index: 4; pointer-events: none; overflow: hidden;
+}
+.bloom {
+  position: absolute; display: block; color: #d59ca4;
+  text-shadow: 0 2px 8px rgba(159,113,77,.17);
+  filter: drop-shadow(0 2px 2px rgba(177,145,95,.12));
+  animation: bloom-drift 7s ease-in-out infinite alternate;
+  opacity: .72; transform-origin: center;
+}
+.bloom:nth-child(even) { color: #ead7bb; }
+.bloom-1 { left: 2%; top: 15%; font-size: 2.6rem; animation-delay: -1s; }
+.bloom-2 { right: 3%; top: 24%; font-size: 2.2rem; animation-delay: -3s; }
+.bloom-3 { left: 5%; top: 58%; font-size: 1.9rem; animation-delay: -2s; }
+.bloom-4 { right: 6%; top: 68%; font-size: 2.8rem; animation-delay: -4s; }
+.bloom-5 { left: 12%; bottom: 7%; font-size: 1.8rem; animation-delay: -2.5s; }
+.bloom-6 { right: 13%; bottom: 12%; font-size: 2rem; animation-delay: -1.5s; }
+.bloom-7 { left: 1%; top: 39%; font-size: 1.5rem; animation-delay: -5s; }
+.bloom-8 { right: 1%; top: 47%; font-size: 1.7rem; animation-delay: -3.5s; }
+@keyframes bloom-drift {
+  0% { transform: translate3d(0,0,0) rotate(-12deg) scale(.9); }
+  100% { transform: translate3d(8px,-16px,0) rotate(14deg) scale(1.08); }
+}
+.sparkle-layer { position: fixed; inset: 0; z-index: 3; pointer-events: none; overflow: hidden; }
+.sparkle-layer i {
+  position: absolute; font-style: normal; color: #c7a566; opacity: 0;
+  animation: golden-twinkle 4.8s ease-in-out infinite;
+}
+.sparkle-layer i:nth-child(1) { left: 17%; top: 19%; animation-delay: .2s; }
+.sparkle-layer i:nth-child(2) { left: 83%; top: 34%; animation-delay: 1.4s; }
+.sparkle-layer i:nth-child(3) { left: 9%; top: 72%; animation-delay: 2.1s; }
+.sparkle-layer i:nth-child(4) { left: 91%; top: 79%; animation-delay: .8s; }
+.sparkle-layer i:nth-child(5) { left: 71%; top: 12%; animation-delay: 2.8s; }
+.sparkle-layer i:nth-child(6) { left: 28%; top: 86%; animation-delay: 1.8s; }
+@keyframes golden-twinkle {
+  0%, 100% { opacity: 0; transform: scale(.55) rotate(0deg); }
+  45%, 60% { opacity: .78; transform: scale(1.2) rotate(35deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bloom, .sparkle-layer i { animation: none; }
+}
