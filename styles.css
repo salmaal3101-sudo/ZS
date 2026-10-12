@@ -464,3 +464,27 @@ footer::after { right:6%; transform:rotate(20deg); }
 .tree-right { animation-delay:-3.8s; }
 @keyframes tree-breeze { 0%,100%{rotate:-.6deg;translate:0 0} 50%{rotate:.8deg;translate:2px 0} }
 @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; scroll-behavior:auto!important; transition-duration:.01ms!important; } }
+
+/* Real photographic flower arrangements — no flower emoji decorations */
+.floral-garland { height: 34px; width: min(360px, 70vw); margin: 0 auto 1rem; }
+.garland-line { display:block; height:100%; border-top:1px solid rgba(170,132,74,.55); border-radius:50%; transform:translateY(17px); }
+.real-flower-cluster { position:absolute; z-index:9; width:clamp(100px,19vw,230px); height:clamp(190px,34vw,430px); object-fit:cover; object-position:72% center; mix-blend-mode:normal; filter:drop-shadow(0 8px 16px rgba(68,45,45,.18)); pointer-events:none; }
+.gate-blooms-left { left:-1%; bottom:0; transform-origin:bottom left; border-radius:48% 35% 0 0; animation:photo-breeze-left 6.8s ease-in-out infinite; }
+.gate-blooms-right { right:-1%; bottom:0; object-position:76% center; transform:scaleX(-1); transform-origin:bottom right; border-radius:35% 48% 0 0; animation:photo-breeze-right 7.5s ease-in-out infinite; }
+.foreground-flowers { position:absolute; z-index:10; bottom:-5px; left:0; right:0; height:27%; display:flex; align-items:flex-end; justify-content:space-between; overflow:hidden; pointer-events:none; }
+.foreground-flowers img { width:28%; height:100%; object-fit:cover; object-position:75% center; border-radius:48% 48% 0 0; opacity:.97; filter:drop-shadow(0 4px 8px rgba(70,42,43,.2)); transform-origin:bottom center; animation:photo-breeze-left 7s ease-in-out infinite; }
+.foreground-flowers img:last-child { transform:scaleX(-1); animation-name:photo-breeze-right; animation-duration:8.1s; }
+.frame-flower { position:absolute; z-index:1; width:clamp(110px,22vw,260px); height:clamp(220px,42vw,480px); object-fit:cover; object-position:75% center; border-radius:42% 42% 14% 14%; opacity:0; filter:drop-shadow(0 8px 14px rgba(81,53,58,.16)); transition:opacity 1.8s ease, transform 2.5s ease; pointer-events:none; }
+.frame-flower-left { left:-4%; top:2%; transform:translate(-12px,12px) rotate(-4deg); }
+.frame-flower-right { right:-4%; bottom:1%; object-position:72% center; transform:scaleX(-1) translate(-12px,12px) rotate(-4deg); }
+.floral-awake .frame-flower { opacity:.98; transform:translate(0,0) rotate(0); animation:photo-breeze-left 7.4s ease-in-out infinite; }
+.floral-awake .frame-flower-right { animation-name:photo-breeze-right; animation-delay:-2.6s; }
+.photo-corner { position:absolute; z-index:2; width:clamp(82px,15vw,175px); height:clamp(115px,20vw,220px); object-fit:cover; object-position:74% center; border-radius:48%; opacity:.8; filter:drop-shadow(0 4px 9px rgba(74,47,49,.15)); transform-origin:bottom center; animation:photo-breeze-left 8s ease-in-out infinite; }
+.photo-corner-tl { top:-25px; left:-20px; }
+.photo-corner-tr { top:-25px; right:-20px; animation-name:photo-breeze-right; animation-delay:-2s; }
+.photo-corner-bl { bottom:-25px; left:-20px; animation-name:photo-breeze-right; animation-delay:-3s; }
+.photo-corner-br { bottom:-25px; right:-20px; }
+@keyframes photo-breeze-left { 0%,100% { rotate:-1deg; translate:0 0; } 50% { rotate:1.4deg; translate:2px -2px; } }
+@keyframes photo-breeze-right { 0%,100% { rotate:1deg; translate:0 0; } 50% { rotate:-1.3deg; translate:-2px -3px; } }
+@media (prefers-reduced-motion: reduce) { .real-flower-cluster,.foreground-flowers img,.frame-flower,.photo-corner { animation:none !important; transition:none !important; } }
+@media (max-width:600px) { .real-flower-cluster { width:30vw; height:48%; } .frame-flower { width:31vw; height:35%; } .photo-corner { width:24vw; height:120px; } .foreground-flowers img { width:35%; } }

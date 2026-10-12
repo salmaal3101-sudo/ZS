@@ -24,7 +24,6 @@
     if (isOpen) {
       invitation.classList.add("floral-awake");
       if (musicOn && !musicStarted) startMusic();
-      createPetals(42);
       setTimeout(() => invitation.scrollIntoView({ behavior: "smooth", block: "start" }), 850);
     } else {
       invitation.classList.remove("floral-awake");
@@ -82,22 +81,7 @@
   musicLabel.textContent = language === "ar" ? "الموسيقى تعمل" : "Musique activée";
   applyLanguage();
 
-  function createPetals(amount) {
-    const symbols = ["✿", "❀", "✽", "·"];
-    for (let i = 0; i < amount; i++) {
-      const petal = document.createElement("span");
-      petal.className = "petal";
-      petal.textContent = symbols[Math.floor(Math.random() * symbols.length)];
-      petal.style.left = Math.random() * 100 + "vw";
-      petal.style.fontSize = (10 + Math.random() * 19) + "px";
-      petal.style.animationDuration = (5 + Math.random() * 7) + "s";
-      petal.style.animationDelay = (Math.random() * 1.6) + "s";
-      petal.style.setProperty("--drift", ((Math.random() - .5) * 180) + "px");
-      petalLayer.appendChild(petal);
-      setTimeout(() => petal.remove(), 14500);
-    }
-  }
-  setInterval(() => createPetals(2), 3600);
+  // Les fleurs photographiques sont animées en douceur via CSS ; aucun emoji floral ni papillon.
 
   const revealObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
