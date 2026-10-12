@@ -9,7 +9,9 @@
   let language = "fr";
   let audioContext = null;
   let musicTimer = null;
-  let musicOn = false;
+  // La musique est activée par défaut ; elle démarre au premier geste utilisateur
+  // (les navigateurs bloquent le son automatique avant toute interaction).
+  let musicOn = true;
   let noteIndex = 0;
   let masterGain = null;
 
@@ -19,9 +21,12 @@
       ? (language === "fr" ? "Découvrir l’invitation" : "اكتشفوا الدعوة")
       : (language === "fr" ? "Ouvrir les portes" : "افتحوا الأبواب");
     if (isOpen) {
+      invitation.classList.add("floral-awake");
+      if (musicOn && !musicTimer) startMusic();
       createPetals(42);
       setTimeout(() => invitation.scrollIntoView({ behavior: "smooth", block: "start" }), 850);
     } else {
+      invitation.classList.remove("floral-awake");
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   });
@@ -109,6 +114,10 @@
       ? (language === "fr" ? "Musique activée" : "الموسيقى تعمل")
       : (language === "fr" ? "Musique" : "الموسيقى");
   });
+
+  // Afficher clairement que la musique est activée dès l’arrivée.
+  musicToggle.setAttribute("aria-pressed", "true");
+  musicLabel.textContent = language === "fr" ? "Musique activée" : "الموسيقى تعمل";
 
   function createPetals(amount) {
     const symbols = ["✿", "❀", "✽", "·"];

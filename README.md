@@ -26,7 +26,7 @@ Site d'invitation bilingue français / arabe, conçu pour être publié gratuite
 Sur GitHub, ouvrez un fichier et cliquez sur le crayon (Edit). Après vos modifications, cliquez sur `Commit changes`. Attendez quelques minutes pour voir le site actualisé.
 
 ## Musique
-Le bouton Musique produit une petite mélodie d'ambiance originale grâce à l'audio du navigateur. Elle démarre seulement après un clic (les navigateurs bloquent généralement la lecture automatique). Aucun fichier audio externe n'est nécessaire.
+Le bouton Musique produit une petite mélodie d'ambiance originale grâce à l'audio du navigateur. Elle est activée par défaut et démarre à l’ouverture du portail (premier clic), car les navigateurs bloquent généralement la lecture automatique du son. Le bouton permet de la couper ou de la réactiver à volonté. Aucun fichier audio externe n'est nécessaire.
 
 ## Personnalisation à vérifier
 - L'heure du compte à rebours est actuellement fixée à 18 h (heure du Maroc) uniquement pour le calcul du compte à rebours. Vous pouvez modifier l'heure dans `script.js` si nécessaire.
@@ -52,3 +52,6 @@ La section invitation inclut une carte Google Maps intégrée pour Palais Hiba, 
 
 ## Version Signature Pro
 Cette édition conserve le jardin royal, le portail qui s’ouvre, les textes français/arabe et la carte Google Maps intégrée. Elle ajoute une finition plus éditoriale, une guirlande florale, des roses décoratives, des arbres et fleurs animés par une brise douce, une lueur de lanternes, des icônes de localisation et une mise en valeur des détails de l’événement. La mise en page s’adapte aux téléphones et ordinateurs.
+
+
+Mise à jour Signature florale : après l’ouverture du portail, un cadre fleuri animé apparaît autour de l’invitation, avec des fleurs pastel, des guirlandes végétales et de petits papillons. La musique, la typographie classique et la carte Google Maps intégrée sont conservées.
