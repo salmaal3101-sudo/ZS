@@ -40,3 +40,7 @@ Le fichier `jardin-royal.jpg` est l'image de fond du grand jardin. Gardez-le à 
 
 ## Animations du jardin royal
 La version conserve le jardin et le portail d’origine, et ajoute le mouvement doux des arbres, des fleurs au premier plan et des roses dans les coins du cadre. Des pétales tombent aussi à l’ouverture du portail.
+
+
+## Typographie classique
+La version utilise une typographie plus classique et élégante : Playfair Display pour les noms, Cormorant Garamond pour les textes et Amiri pour l’arabe. Les animations du jardin royal sont conservées.

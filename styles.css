@@ -217,3 +217,70 @@ body[dir="rtl"] .date-label,body[dir="rtl"] .countdown span {letter-spacing:0;}
     animation-iteration-count: 1 !important;
   }
 }
+
+
+/* Typographie classique et intemporelle */
+:root {
+  --serif: "Cormorant Garamond", "Times New Roman", serif;
+  --sans: "Cormorant Garamond", "Times New Roman", serif;
+  --arabic: "Amiri", serif;
+}
+body {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: .015em;
+}
+.eyebrow {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-size: .78rem;
+  letter-spacing: .18em;
+  font-weight: 600;
+}
+.couple-name {
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-weight: 400;
+  letter-spacing: .015em;
+}
+.couple-name i {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+}
+.intro, .invitation-lead, .closing, footer p {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.names-script, .footer-names {
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: .005em;
+}
+.date-label, .date-number, .date-ar, .venue h3, .countdown span,
+.map-button, .text-button, .music-button, .open-gate-button, .gate-hint {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+}
+.date-label {
+  letter-spacing: .2em;
+  font-weight: 600;
+}
+.date-number {
+  font-size: clamp(2rem, 5vw, 2.7rem);
+  font-weight: 400;
+}
+.venue h3 {
+  font-weight: 500;
+  letter-spacing: .03em;
+}
+.map-button {
+  letter-spacing: .04em;
+}
+.invitation-inner {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+}
+.arabic, [lang="ar"] {
+  font-family: "Amiri", serif;
+}
+footer .footer-names {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
