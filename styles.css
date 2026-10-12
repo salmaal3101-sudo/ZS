@@ -463,3 +463,14 @@ footer::after { right:6%; transform:rotate(20deg); }
   .bloom-2,.bloom-6 { left:25px; } .bloom-4,.bloom-8 { right:25px; }
   .vine { letter-spacing:0; font-size:.95rem; }
 }
+
+/* Photorealistic floral side garlands: blush roses, lavender and natural greenery. */
+.invitation:after { content:""; position:absolute; inset:0; pointer-events:none; z-index:0; opacity:.18; background:linear-gradient(90deg,rgba(255,250,243,.08),rgba(255,250,243,.96) 24%,rgba(255,250,243,.96) 76%,rgba(255,250,243,.08)),url('floral-left.jpg') left center/27% 100% no-repeat,url('floral-right.jpg') right center/27% 100% no-repeat; mix-blend-mode:multiply; }
+.invitation.floral-awake:after { opacity:.34; transition:opacity 1.8s ease; }
+.floral-garland { color:#b89b75; text-shadow:0 0 12px rgba(255,244,225,.9); }
+.floral-garland span { display:inline-block; animation: bloom-sway 5.8s ease-in-out infinite; transform-origin:bottom center; }
+.floral-garland span:nth-child(3) { animation-delay:-2.2s; }
+.tree { animation:tree-breeze 8s ease-in-out infinite; transform-origin:bottom center; }
+.tree-right { animation-delay:-3.8s; }
+@keyframes tree-breeze { 0%,100%{rotate:-.6deg;translate:0 0} 50%{rotate:.8deg;translate:2px 0} }
+@media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; scroll-behavior:auto!important; transition-duration:.01ms!important; } }
