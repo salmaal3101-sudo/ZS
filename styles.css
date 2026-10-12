@@ -131,3 +131,29 @@ body[dir="rtl"] .date-label,body[dir="rtl"] .countdown span {letter-spacing:0;}
  .countdown{gap:16px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+
+/* Amélioration visuelle : véritable grand jardin romantique derrière le portail */
+.garden-view {
+  background: #eadfce url("jardin-royal.jpg") center 54% / cover no-repeat !important;
+  min-height: clamp(390px, 59vw, 620px);
+}
+.garden-view:before {
+  background: linear-gradient(180deg, rgba(255,246,225,.06), rgba(255,242,222,.02) 55%, rgba(102,76,45,.12)) !important;
+}
+.garden-sun, .distant-arch, .garden-path, .tree, .garden-flowers, .ground {
+  display: none !important;
+}
+.gate-post, .gate-leaf, .gate-center { filter: drop-shadow(0 2px 2px rgba(74,50,28,.22)); }
+.gate-leaf {
+  background: linear-gradient(90deg, rgba(91,68,40,.18), rgba(255,239,201,.18), rgba(91,68,40,.14));
+  backdrop-filter: blur(.15px);
+}
+.foreground-flowers {
+  text-shadow: 0 2px 3px rgba(75,46,33,.25), 0 0 12px rgba(255,241,224,.9);
+}
+@media (min-width: 900px) {
+  .hero { padding-top: 74px; }
+  .gate-scene { width: min(100%, 900px); }
+  .garden-view { height: min(62vw, 650px); }
+}
