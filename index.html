@@ -1,130 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f0e7">
-  <meta name="description" content="Invitation au mariage de Zakariae & Salma — 30 janvier 2027, Palais Hiba, Fès.">
-  <title>Zakariae & Salma — Invitation de mariage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zakariae & Salma — Invitation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Amiri:wght@400;700&family=Parisienne&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="ambient-glow" aria-hidden="true"></div>
-  <div class="top-actions">
-    <button id="languageToggle" class="text-button" type="button" aria-label="Change language">العربية</button>
-    <button id="musicToggle" class="music-button" type="button" aria-pressed="false">
-      <span class="music-icon" aria-hidden="true">♫</span><span id="musicLabel">Musique</span>
-    </button>
-  </div>
 
   <main>
-    <section class="hero" id="home">
-      <div class="sky-ornament ornament-left" aria-hidden="true">✧</div>
-      <div class="floral-garland" aria-hidden="true"><span>❀</span><i>❧</i><span>✿</span><i>❧</i><span>❀</span></div>
-      <div class="sky-ornament ornament-right" aria-hidden="true">✧</div>
-      <p class="eyebrow" data-fr="UNE INVITATION DU CŒUR" data-ar="دعوة من القلب">UNE INVITATION DU CŒUR · دعوة من القلب</p>
-      <h1 class="couple-name"><span>Zakariae</span><i>&amp;</i><span>Salma</span></h1>
-      <p class="intro" data-fr="Deux âmes, une promesse, une histoire à célébrer…" data-ar="روحان، وعد واحد، وحكاية نحتفل بها…">Deux âmes, une promesse… · روحان، وعد واحد، وحكاية جميلة…</p>
-
-      <div class="gate-scene" id="gateScene" aria-label="Portail royal animé">
-        <div class="tree tree-left" aria-hidden="true"></div>
-        <div class="tree tree-right" aria-hidden="true"></div>
-        <div class="garden-view">
-          <div class="distant-arch"></div>
-          <div class="garden-sun"></div>
-          <div class="garden-path"></div>
-          <div class="garden-flowers flowers-a">✿ ❀ ✿</div>
-          <div class="garden-flowers flowers-b">❀ ✿ ❀</div>
-          <div class="gate-post post-left"><div class="post-cap"></div><div class="lantern">♧<span></span></div><div class="post-vine">❧</div></div>
-          <div class="gate-post post-right"><div class="post-cap"></div><div class="lantern">♧<span></span></div><div class="post-vine">❧</div></div>
-          <div class="gate-leaf leaf-left">
-            <div class="gate-arch"></div><div class="gate-bars"></div>
-            <div class="gate-scroll scroll-one">❦</div><div class="gate-scroll scroll-two">❧</div><div class="gate-medallion">✦</div>
-          </div>
-          <div class="gate-leaf leaf-right">
-            <div class="gate-arch"></div><div class="gate-bars"></div>
-            <div class="gate-scroll scroll-one">❦</div><div class="gate-scroll scroll-two">❧</div><div class="gate-medallion">✦</div>
-          </div>
-          <div class="gate-center" aria-hidden="true"></div>
-          <div class="ground"></div>
-          <div class="foreground-flowers" aria-hidden="true">
-            <span>✿</span><span>❀</span><span>✿</span><span>❁</span><span>✿</span><span>❀</span><span>✿</span>
-          </div>
-        </div>
-        <button class="open-gate-button" id="openGate" type="button">
-          <span data-fr="Ouvrir les portes" data-ar="افتحوا الأبواب">Ouvrir les portes · افتحوا الأبواب</span>
-          <span class="button-arrow" aria-hidden="true">⌄</span>
-        </button>
-        <p class="gate-hint" data-fr="Touchez pour découvrir notre invitation" data-ar="اضغطوا لاكتشاف دعوتنا">Touchez pour découvrir notre invitation · اضغطوا لاكتشاف دعوتنا</p>
+    <!-- SECTION EN-TÊTE / PORTAIL -->
+    <section class="hero-section">
+      <!-- Illustration florale supérieure -->
+      <div class="floral-header">
+        <svg class="floral-svg" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 30 C120 10, 140 10, 160 25 C170 32, 180 20, 195 25 M100 30 C80 10, 60 10, 40 25 C30 32, 20 20, 5 25" stroke="#C5A059" stroke-width="1.2" fill="none"/>
+          <circle cx="100" cy="30" r="4" fill="#C5A059" />
+          <circle cx="130" cy="18" r="2.5" fill="#D4AF37" />
+          <circle cx="70" cy="18" r="2.5" fill="#D4AF37" />
+        </svg>
       </div>
-      <div class="scroll-cue" aria-hidden="true"><span></span></div>
-    </section>
 
-    <section class="invitation reveal" id="invitation">
-      <div class="bloom-frame" aria-hidden="true">
-        <span class="bloom bloom-1">✿</span><span class="bloom bloom-2">❀</span><span class="bloom bloom-3">✽</span><span class="bloom bloom-4">❁</span>
-        <span class="bloom bloom-5">✿</span><span class="bloom bloom-6">❀</span><span class="bloom bloom-7">✽</span><span class="bloom bloom-8">❁</span>
-        <span class="vine vine-top">❧　❦　❧　❦　❧</span><span class="vine vine-bottom">❧　❦　❧　❦　❧</span>
-        
-      </div>
-      <div class="floral-corner corner-tl" aria-hidden="true">❀</div>
-      <div class="floral-corner corner-tr" aria-hidden="true">✿</div>
-      <div class="floral-corner corner-bl" aria-hidden="true">✿</div>
-      <div class="floral-corner corner-br" aria-hidden="true">❀</div>
-      <div class="invitation-inner">
-        <p class="eyebrow" data-fr="AVEC LA BÉNÉDICTION DE NOS FAMILLES" data-ar="بمباركة عائلتينا">AVEC LA BÉNÉDICTION DE NOS FAMILLES · بمباركة عائلتينا</p>
-        <p class="invitation-lead" data-fr="Nous avons l’immense joie de vous convier à célébrer notre union." data-ar="بكل الحب والفرح، نتشرف بدعوتكم لمشاركتنا فرحة زفافنا.">Nous avons la joie de vous inviter · نتشرف بدعوتكم لمشاركتنا فرحة زفافنا</p>
-        <h2 class="names-script">Zakariae <span>&amp;</span> Salma</h2>
-        <div class="gold-divider"><span>✦</span></div>
-        <p class="date-label" data-fr="SAMEDI" data-ar="يوم السبت">SAMEDI · يوم السبت</p>
-        <p class="date-number">30 <span>·</span> 01 <span>·</span> 2027</p>
-        <p class="date-ar" lang="ar" dir="rtl">30 يناير 2027</p>
-        <div class="event-details">
-          <div><span class="detail-icon" aria-hidden="true">✧</span><span data-fr="Une journée à partager" data-ar="يوم نشاركه معاً">Une journée à partager</span></div>
-          <div><span class="detail-icon" aria-hidden="true">❦</span><span data-fr="Au cœur de Fès" data-ar="في قلب مدينة فاس">Au cœur de Fès</span></div>
+      <p class="sub-title">UNE INVITATION DU CŒUR · دعوة من القلب</p>
+      <h1 class="names"><span>Zakariae</span> <i>&</i> <span>Salma</span></h1>
+      <p class="tagline">Deux âmes, une promesse… · روحان، وعد واحد، وحكاية جميلة…</p>
+
+      <div class="gate-container" aria-label="Portail royal">
+        <div class="gate-card">
+          <p class="click-notice">Touchez pour découvrir notre invitation · اضغطوا لاكتشاف دعوتنا</p>
         </div>
-        <div class="venue">
-          <span class="venue-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
-          <h3 data-fr="Palais Hiba" data-ar="قصر هبة">Palais Hiba · قصر هبة</h3>
-          <p data-fr="Fès, Maroc" data-ar="فاس، المغرب">Fès, Maroc · فاس، المغرب</p>
-        </div>
-        <div class="map-card" aria-label="Carte du lieu du mariage">
-          <iframe
-            title="Carte Google Maps — Palais Hiba, Fès"
-            src="https://maps.google.com/maps?q=Palais%20Hiba%2C%20F%C3%A8s%2C%20Maroc&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen>
-          </iframe>
-          <p data-fr="Retrouvez-nous au Palais Hiba, à Fès." data-ar="نلتقي بكم في قصر هبة بمدينة فاس.">Retrouvez-nous au Palais Hiba, à Fès.</p>
-        </div>
-        <p class="closing" data-fr="Votre présence sera notre plus beau cadeau." data-ar="حضوركم هو أجمل هدية لنا.">Votre présence sera notre plus beau cadeau.</p>
-        <p class="closing-ar" lang="ar" dir="rtl">حضوركم يزيد فرحتنا اكتمالاً</p>
       </div>
     </section>
 
-    <section class="countdown-section reveal">
-      <p class="eyebrow" data-fr="LE COMPTE À REBOURS" data-ar="العد التنازلي">LE COMPTE À REBOURS</p>
-      <h2 data-fr="Le début d’une belle histoire" data-ar="بداية حكاية جميلة">Le début d’une belle histoire</h2>
-      <div class="countdown" aria-label="Compte à rebours">
-        <div><strong id="days">—</strong><span data-fr="Jours" data-ar="يوم">Jours</span></div>
-        <div><strong id="hours">—</strong><span data-fr="Heures" data-ar="ساعة">Heures</span></div>
-        <div><strong id="minutes">—</strong><span data-fr="Minutes" data-ar="دقيقة">Minutes</span></div>
-        <div><strong id="seconds">—</strong><span data-fr="Secondes" data-ar="ثانية">Secondes</span></div>
+    <!-- SECTION DETAILS DE L'INVITATION -->
+    <section class="details-section">
+      <div class="floral-divider">
+        <!-- SVG de branche d'olivier / eucalyptys épurée -->
+        <svg class="leaf-svg" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 15 Q 60 0 110 15" stroke="#8A9A86" stroke-width="1.5" fill="none"/>
+          <path d="M30 11 C25 5, 15 8, 20 14 C25 20, 35 15, 30 11 Z" fill="#9CAF88" opacity="0.8"/>
+          <path d="M50 8 C45 2, 35 5, 40 11 C45 17, 55 12, 50 8 Z" fill="#9CAF88" opacity="0.8"/>
+          <path d="M70 8 C75 2, 85 5, 80 11 C75 17, 65 12, 70 8 Z" fill="#9CAF88" opacity="0.8"/>
+          <path d="M90 11 C95 5, 105 8, 100 14 C95 20, 85 15, 90 11 Z" fill="#9CAF88" opacity="0.8"/>
+        </svg>
+      </div>
+
+      <p class="blessing">AVEC LA BÉNÉDICTION DE NOS FAMILLES · بمباركة عائلتينا</p>
+      <p class="invitation-text">Nous avons la joie de vous inviter · نتشرف بدعوتكم لمشاركتنا فرحة زفافنا</p>
+
+      <h2 class="main-names">Zakariae <span>&</span> Salma</h2>
+
+      <div class="date-box">
+        <p class="day">SAMEDI · يوم السبت</p>
+        <p class="date-num">30 <span>·</span> 01 <span>·</span> 2027</p>
+        <p class="date-ar" dir="rtl" lang="ar">30 يناير 2027</p>
+      </div>
+
+      <div class="location-card">
+        <h3>Palais Hiba · قصر هبة</h3>
+        <p>Fès, Maroc · فاس، المغرب</p>
+        <p class="venue-note">Retrouvez-nous au Palais Hiba, à Fès.</p>
+      </div>
+
+      <p class="gift-text">Votre présence sera notre plus beau cadeau.</p>
+      <p class="gift-text-ar" dir="rtl" lang="ar">حضوركم يزيد فرحتنا اكتمالاً</p>
+    </section>
+
+    <!-- SECTION COMPTE À REBOURS -->
+    <section class="countdown-section">
+      <p class="countdown-title">LE COMPTE À REBOURS</p>
+      <h2>Le début d’une belle histoire</h2>
+      <div class="timer" aria-label="Compte à rebours">
+        <div><strong id="days">—</strong><span>Jours</span></div>
+        <div><strong id="hours">—</strong><span>Heures</span></div>
+        <div><strong id="minutes">—</strong><span>Minutes</span></div>
+        <div><strong id="seconds">—</strong><span>Secondes</span></div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="footer-flourish" aria-hidden="true">❦</div>
-    <p class="footer-names">Zakariae <span>&amp;</span> Salma</p>
-    <p data-fr="Avec amour, nous avons hâte de partager ce jour avec vous." data-ar="بكل حب، نتطلع إلى مشاركة هذا اليوم معكم.">Avec amour, nous avons hâte de partager ce jour avec vous.</p>
+    <p class="footer-names">Zakariae <span>&</span> Salma</p>
+    <p>Avec amour, nous avons hâte de partager ce jour avec vous.</p>
     <small>30 · 01 · 2027</small>
   </footer>
-  <div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
-  <script src="script.js"></script>
+
 </body>
 </html>
