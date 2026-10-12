@@ -445,17 +445,7 @@ footer::after { right:6%; transform:rotate(20deg); }
 .vine-top { top:8px; }
 .vine-bottom { bottom:8px; transform:translateX(-50%) rotate(180deg); }
 .floral-awake .vine { animation: vine-appear 1.4s ease .6s forwards, vine-sway 7s ease-in-out 2s infinite; }
-.butterfly { position:absolute; font-size:1.2rem; opacity:0; filter:drop-shadow(0 2px 4px rgba(140,115,161,.2)); }
-.butterfly-one { left:12%; top:25%; }
-.butterfly-two { right:12%; top:62%; }
-.floral-awake .butterfly-one { animation: butterfly-float 8s ease-in-out 1.4s infinite, butterfly-show 1s ease 1.2s forwards; }
-.floral-awake .butterfly-two { animation: butterfly-float 9s ease-in-out 2s infinite reverse, butterfly-show 1s ease 1.8s forwards; }
-@keyframes bloom-arrive { to { opacity:.96; transform:scale(1) rotate(0); } }
-@keyframes flower-breeze { 0%,100% { translate:0 0; rotate:-2deg; } 50% { translate:2px -3px; rotate:3deg; } }
-@keyframes vine-appear { to { opacity:1; } }
-@keyframes vine-sway { 0%,100% { margin-left:0; } 50% { margin-left:3px; } }
-@keyframes butterfly-show { to { opacity:.8; } }
-@keyframes butterfly-float { 0%,100% { translate:0 0; rotate:-7deg; } 35% { translate:13px -11px; rotate:8deg; } 70% { translate:-7px -17px; rotate:-3deg; } }
+ 35% { translate:13px -11px; rotate:8deg; } 70% { translate:-7px -17px; rotate:-3deg; } }
 .invitation-inner { z-index:2; }
 @media (max-width:540px) {
   .bloom-frame::before { inset:9px; }

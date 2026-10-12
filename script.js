@@ -6,7 +6,7 @@
   const musicToggle = document.getElementById("musicToggle");
   const musicLabel = document.getElementById("musicLabel");
   const petalLayer = document.getElementById("petalLayer");
-  let language = "mix";
+  let language = "fr";
   // Utilise le fichier MP3 placé à la racine du dépôt GitHub.
   // La lecture démarre au premier clic (règle anti-autoplay des navigateurs).
   const weddingAudio = new Audio("young-and-beautiful-instrumental.mp3");
@@ -36,21 +36,20 @@
     document.documentElement.lang = language === "ar" ? "ar" : "fr";
     document.body.dir = language === "ar" ? "rtl" : "ltr";
     document.querySelectorAll("[data-fr][data-ar]").forEach(el => {
-      if (language === "mix") el.textContent = `${el.dataset.fr} · ${el.dataset.ar}`;
-      else el.textContent = el.dataset[language];
+      el.textContent = el.dataset[language];
     });
-    languageToggle.textContent = language === "mix" ? "FR / العربية" : (language === "fr" ? "العربية" : "Français");
+    languageToggle.textContent = language === "fr" ? "العربية" : "Français";
     musicLabel.textContent = musicOn
-      ? (language === "ar" ? "الموسيقى تعمل" : language === "mix" ? "Musique · الموسيقى" : "Musique activée")
-      : (language === "ar" ? "الموسيقى" : language === "mix" ? "Musique · الموسيقى" : "Musique");
+      ? (language === "ar" ? "الموسيقى تعمل" : "Musique activée")
+      : (language === "ar" ? "الموسيقى" : "Musique");
     openGate.querySelector("span").textContent = gateScene.classList.contains("opened")
-      ? (language === "ar" ? "اكتشفوا الدعوة" : language === "mix" ? "Découvrir l’invitation · اكتشفوا الدعوة" : "Découvrir l’invitation")
-      : (language === "ar" ? "افتحوا الأبواب" : language === "mix" ? "Ouvrir les portes · افتحوا الأبواب" : "Ouvrir les portes");
+      ? (language === "ar" ? "اكتشفوا الدعوة" : "Découvrir l’invitation")
+      : (language === "ar" ? "افتحوا الأبواب" : "Ouvrir les portes");
     musicToggle.setAttribute("aria-label", language === "ar" ? "تشغيل أو إيقاف الموسيقى" : "Activer ou couper la musique");
   }
 
   languageToggle.addEventListener("click", () => {
-    language = language === "mix" ? "fr" : language === "fr" ? "ar" : "mix";
+    language = language === "fr" ? "ar" : "fr";
     applyLanguage();
   });
 
@@ -58,10 +57,10 @@
   function startMusic() {
     weddingAudio.play().then(() => {
       musicStarted = true;
-      musicLabel.textContent = language === "ar" ? "الموسيقى تعمل" : language === "mix" ? "Musique · الموسيقى" : "Musique activée";
+      musicLabel.textContent = language === "ar" ? "الموسيقى تعمل" : "Musique activée";
       musicToggle.setAttribute("aria-pressed", "true");
     }).catch(() => {
-      musicLabel.textContent = language === "ar" ? "اضغطوا للاستماع" : language === "mix" ? "Touchez pour écouter · اضغطوا للاستماع" : "Touchez pour écouter";
+      musicLabel.textContent = language === "ar" ? "اضغطوا للاستماع" : "Touchez pour écouter";
     });
   }
 
@@ -80,7 +79,7 @@
 
   // Afficher clairement que la musique est activée dès l’arrivée.
   musicToggle.setAttribute("aria-pressed", "true");
-  musicLabel.textContent = language === "ar" ? "الموسيقى تعمل" : language === "mix" ? "Musique · الموسيقى" : "Musique activée";
+  musicLabel.textContent = language === "ar" ? "الموسيقى تعمل" : "Musique activée";
   applyLanguage();
 
   function createPetals(amount) {
